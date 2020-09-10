@@ -1,0 +1,11 @@
+C:\Users\Nuwan\source\repos\Location\Location\bin\Debug\Location.exe.config
+C:\Users\Nuwan\source\repos\Location\Location\bin\Debug\Location.exe
+C:\Users\Nuwan\source\repos\Location\Location\bin\Debug\Location.pdb
+C:\Users\Nuwan\source\repos\Location\Location\obj\Debug\Location.csprojAssemblyReference.cache
+C:\Users\Nuwan\source\repos\Location\Location\obj\Debug\Location.Building.resources
+C:\Users\Nuwan\source\repos\Location\Location\obj\Debug\Location.Properties.Resources.resources
+C:\Users\Nuwan\source\repos\Location\Location\obj\Debug\Location.csproj.GenerateResource.cache
+C:\Users\Nuwan\source\repos\Location\Location\obj\Debug\Location.csproj.CoreCompileInputs.cache
+C:\Users\Nuwan\source\repos\Location\Location\obj\Debug\Location.exe
+C:\Users\Nuwan\source\repos\Location\Location\obj\Debug\Location.pdb
+C:\Users\Nuwan\source\repos\Location\Location\obj\Debug\Location.Room.resources

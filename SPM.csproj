@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{495ADD01-DA6B-4C11-A953-3BEB53F7BF42}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SPM</RootNamespace>
+    <AssemblyName>SPM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssignRoomForLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignRoomForLecturer.Designer.cs">
+      <DependentUpon>AssignRoomForLecturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignRoomForSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignRoomForSubject.Designer.cs">
+      <DependentUpon>AssignRoomForSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignRoomForTag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignRoomForTag.Designer.cs">
+      <DependentUpon>AssignRoomForTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Building.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Building.Designer.cs">
+      <DependentUpon>Building.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buildingClasses\buildingClass.cs" />
+    <Compile Include="buildingClasses\lectureRoomClass.cs" />
+    <Compile Include="buildingClasses\roomClass.cs" />
+    <Compile Include="buildingClasses\subjectRoomClass.cs" />
+    <Compile Include="buildingClasses\tagRoomClass.cs" />
+    <Compile Include="Classes\lecturerClass.cs" />
+    <Compile Include="Classes\subjectClass.cs" />
+    <Compile Include="CreateEditDeleteTag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateEditDeleteTag.Designer.cs">
+      <DependentUpon>CreateEditDeleteTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit And Update WHrs And WDys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit And Update WHrs And WDys.Designer.cs">
+      <DependentUpon>Edit And Update WHrs And WDys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditStBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStBatch.Designer.cs">
+      <DependentUpon>EditStBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateGroups.Designer.cs">
+      <DependentUpon>GenerateGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lecturerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lecturerForm.Designer.cs">
+      <DependentUpon>lecturerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Programme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programme.Designer.cs">
+      <DependentUpon>Programme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room.Designer.cs">
+      <DependentUpon>Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statics.Designer.cs">
+      <DependentUpon>statics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentList.Designer.cs">
+      <DependentUpon>StudentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subjectForm.Designer.cs">
+      <DependentUpon>subjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View.Designer.cs">
+      <DependentUpon>View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeekDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeekDay.Designer.cs">
+      <DependentUpon>WeekDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeekEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeekEnd.Designer.cs">
+      <DependentUpon>WeekEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingDays And WorkingHours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingDays And WorkingHours.Designer.cs">
+      <DependentUpon>WorkingDays And WorkingHours.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AssignRoomForLecturer.resx">
+      <DependentUpon>AssignRoomForLecturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignRoomForSubject.resx">
+      <DependentUpon>AssignRoomForSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignRoomForTag.resx">
+      <DependentUpon>AssignRoomForTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Building.resx">
+      <DependentUpon>Building.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateEditDeleteTag.resx">
+      <DependentUpon>CreateEditDeleteTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit And Update WHrs And WDys.resx">
+      <DependentUpon>Edit And Update WHrs And WDys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStBatch.resx">
+      <DependentUpon>EditStBatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateGroups.resx">
+      <DependentUpon>GenerateGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lecturerForm.resx">
+      <DependentUpon>lecturerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programme.resx">
+      <DependentUpon>Programme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Room.resx">
+      <DependentUpon>Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statics.resx">
+      <DependentUpon>statics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentList.resx">
+      <DependentUpon>StudentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subjectForm.resx">
+      <DependentUpon>subjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View.resx">
+      <DependentUpon>View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeekDay.resx">
+      <DependentUpon>WeekDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeekEnd.resx">
+      <DependentUpon>WeekEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingDays And WorkingHours.resx">
+      <DependentUpon>WorkingDays And WorkingHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

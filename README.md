@@ -1,2 +1,0 @@
-# TimeTableManagement
-Desktop Application
